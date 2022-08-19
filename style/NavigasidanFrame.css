@@ -1,0 +1,111 @@
+@import './universal.css';
+/* header */
+header {
+    background-color: #002b5b;
+    box-shadow: 0 3px 15px rgb(71, 74, 74);
+}
+.navigasi {
+        max-width: 1100px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        align-items: center;
+}
+.menu{
+    font-size: 20px;
+    padding: 15px;
+}
+.logo {
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+.menu > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+.menu > ul > li > a:hover {
+    background-color: rgba(85, 237, 248, 0.511);
+    color:black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+/* quote */
+.quote > h1{
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+.quote > p {
+    text-align: center;
+    padding: 5px;
+}
+    /* List Card */
+.frame{
+   margin: auto;
+   align-items: center;
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(8, 8, 8, 0.411);
+    border-radius: 5px;
+    background-color: #002b5b ;
+    width: auto;
+}
+.frame > h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 30px ;
+}
+.list-card {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 20px;
+}
+.card > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.inner-card {
+    padding: 10px;
+    color: white;
+    margin: px;
+}
+.inner-card > p {
+    padding-top: 8px;
+}
+.inner-card > a {
+    text-decoration: none;
+    color: white;
+    margin: auto ;
+}
+.inner-card > a:hover {
+    color: rgb(19, 17, 17);
+    margin: auto ;
+}
+@media screen and (max-width: 900px) {
+    .list-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 550px) {
+    .list-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
